@@ -586,9 +586,9 @@ func validateColorSpaceArray(xRefTable *model.XRefTable, a types.Array, excludeP
 		err = validateIndexedColorSpace(xRefTable, a, model.V11)
 
 	case model.PatternCS:
-		if excludePatternCS {
-			return errors.New("pdfcpu: validateColorSpaceArray: Pattern color space not allowed")
-		}
+		// if excludePatternCS {
+		// 	return errors.New("pdfcpu: validateColorSpaceArray: Pattern color space not allowed")
+		// }
 		err = validatePatternColorSpace(xRefTable, a, model.V12)
 
 	case model.SeparationCS:
