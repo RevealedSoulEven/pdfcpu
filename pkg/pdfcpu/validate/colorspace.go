@@ -562,9 +562,9 @@ func validateColorSpaceArray(xRefTable *model.XRefTable, a types.Array, excludeP
 	// see 8.6 Color Spaces
 
 	name, ok := a[0].(types.Name)
-	if !ok {
-		return errors.New("pdfcpu: validateColorSpaceArray: corrupt Colorspace array")
-	}
+	// if !ok {
+	// 	return errors.New("pdfcpu: validateColorSpaceArray: corrupt Colorspace array")
+	// }
 
 	switch name {
 
